@@ -243,6 +243,8 @@ img {
 }
 
 .mywork-maket p {
+  font-size: 16px;
+  line-height: 1.5em;
   color: #5d5d5d;
 }
 
@@ -257,6 +259,8 @@ img {
 }
 
 .skills p {
+  font-size: 16px;
+  line-height: 1.5em;
   margin: 10px;
 }
 

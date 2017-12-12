@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Барбершоп «Бородинский»</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--active"><span>Главная</span></li>
+            <li class="main-nav__item"><a href="#">Информация</a></li>
+            <li class="main-nav__item"><a href="#">Новости</a></li>
+            <li class="main-nav__item"><a href="price.html">Прайс-лист</a></li>
+            <li class="main-nav__item"><a href="shop-catalog.html">Магазин</a></li>
+            <li class="main-nav__item"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="main-nav__user-block">
+            <li class="main-nav__item">
+              <a href= "#" class= "main-nav__user-login" title= "Войти">Вход</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="page-main container">
+        <div class= "main-header__logo">
+          <img src="img/logotype-desktop.png" alt= "Барбершоп «Бородинский»" width="370" height="153">
+        </div>
+        <section class="features">
+          <div class="features__item">
+            <b class="features__name">Быстро</b>
+            <p> МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+          </div>
+          <div class="features__item">
+            <b class="features__name">Круто</b>
+            <p> ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br> МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+          </div>
+          <div class="features__item">
+            <b class="features__name">Дорого</b>
+            <p> НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО И<br> НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+          </div>
+        </section>
+        <div class="index-content">
+          <section class="index-content__column">
+            <h2 class="index-content__title">НОВОСТИ</h2>
+            <ul class="index-content__news">
+              <li>
+                НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ
+                <br>МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+                <time datetime="2017-05-25">25 мая</time>
+              </li>
+              <li>
+                В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ<br>
+                <time datetime="2017-05-20">20 мая</time>
+              </li>
+            </ul>
+            <a class="btn" href="#">Все новости</a>
+          </section>
+          <section class="index-content__column">
+            <h2 class="index-content__title">ФОТОГАЛЕРЕЯ</h2>
+            <div class="gallery">
+              <ul class="gallery__container">
+                <li class="gallery__slider gallery__slider--fade">
+                <img src="img/gallery-foto1.jpg" style="width:100%" alt="photo"></li>
+                <li class="gallery__slider gallery__slider--fade">
+                  <img src="img/gallery-foto2.jpg" style="width:100%" alt="photo2">
+                </li>
+                <li class="gallery__slider gallery__slider--fade">
+                  <img src="img/gallery-foto3.jpg" style="width:100%" alt="photo3">
+                </li>
+                <li class="gallery__slider gallery__slider--fade">
+                  <img src="img/gallery-foto4.jpg" style="width:100%" alt="photo4">
+                </li>
+              </ul>
+              <div class ="gallery__btn">
+                <button class="btn " onclick="plusSlides(-1)">Назад</button>
+                <button class="btn" onclick="plusSlides(1)">Вперед</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="index-content">
+          <section class="index-content__column">
+            <h2 class="index-content__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+            <p>
+              Барбершоп «Бородинский»<br>
+              Адрес: г. Киев, Б. Бубликова, д. 19/8<br>
+              Телефон: (044) 277-07-02
+            </p>
+            <p>
+              Время работы:<br>
+              пн — пт: с 10:00 до 22:00<br>
+              сб — вс: с 10:00 до 19:00
+            </p>
+            <a href="#" class=" btn  btn__open-map">Как проехать</a>
+            <a href="#popup" class="btn  btn__popup">Обратная связь</a>
+          </section>
+          <section class="index-content__column">
+            <h2 class="index-content__title">ЗАПИСАТЬСЯ</h2>
+            <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+            <form class="appoitment-form" method="post">
+              <input type="text" name="date" value="" placeholder="Дата">
+              <input type="text" name="time" value="" placeholder="Время">
+              <input type="text" name="name" value="" placeholder="Ваше имя">
+              <input type="text" name="phone" value="" placeholder="Телефон">
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </main>
+      <div class="modal-content">
+        <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+        <h2>Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form action="">
+          <input type="text" name="user-login" placeholder="Логин">
+          <input type="password" name="user-password" placeholder="Пароль">
+          <label class="modal-content__chackbox">
+            <input type="checkbox" name="user-remember">Запомните меня
+            <span></span>
+          </label>
+          <a href="#">Я забыл пароль!</a>
+          <button class="btn modal-content__entry">Войти</button>
+        </form>
+      </div>
+      <div class="modal-content-map">
+        <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1049151382313!2d30.38839631606507!3d50.457770979476436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc5fe6b95409%3A0x33e1506b96f75b7e!2z0KHQstGP0YLQvtGI0LjQvdC-!5e0!3m2!1sru!2sru!4v1505916970704" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-overlay"></div>
+      <footer class="main-footer">
+        <div class="main-footer__wrapper container">
+          <section class="main-footer__contacts">
+            <b>Барбершоп «Бородинский»</b>
+            <br> Адрес: г. Киев, Б. Бубликова 19/8
+            <br>
+            <a href="tel:(044) 277-07-02"><span class="main-footer__contacts--hidden">Тел.:</span> (044) 277-07-02</a>
+          </section>
+          <section class="main-footer__social">
+            <b>Давайте дружить!</b>
+            <span class="social-links">
+              <a class="social-link  social-link--vk" href="#">Вконтакте</a>
+              <a class="social-link  social-link--fb" href="#">Фейсбук</a>
+              <a class="social-link  social-link--in" href="#">Инстаграм</a>
+            </span>
+          </section>
+          <section class="main-footer__copyright">
+            <b>Разработано:</b><br>
+            <a class="main-footer__copyright-link  btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </section>
+        </div>
+      </footer>
+      <script src="js/modal-content.js"></script>
+      <script src="js/modal-content-map.js"></script>
+    </body>
+    <script src="js/slider.js"></script>
+  </html>

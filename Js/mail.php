@@ -1,20 +1,22 @@
-<?
-if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['email'])&&$_POST['email']!="")&&(isset($_POST['text'])&&$_POST['text']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'ekateryna123@mail.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
-        $subject = 'Письмо с сайта'; //Загаловок сообщения
-        $message = '
-                <html>
-                    <head>
-                        <title>'.$subject.'</title>
-                    </head>
-                    <body>
-                        <p>Имя: '.$_POST['name'].'</p>
-                        <p>Email: '.$_POST['email'].'</p>
-                        <p>Текст сообщения: '.$_POST['text'].'</p>                          
-                    </body>
-                </html>'; //Текст нащего сообщения можно использовать HTML теги
-        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: $recepient\r\n";  //Наименование и почта отправителя
-        mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
+
+
+<?php
+ 
+if($_POST['submit']){
+ 
+$recepient = "ekateryna123@mail.ru"; //почта получателя
+$sitename = "Письмо с сайта";
+ 
+$name = trim($_POST['name']);//а тут в квадратных скобках указываем  имена полей формы
+$email = trim($_POST['email']);
+$text = $_POST['text'];
+$pagetitle = "Новая заявка с сайта, $sitename" ;
+$message = "Имя: $name \n  email: $email \n Текст: $text ";
+if (mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset = utf-8 \r\n From: $recepient"));
+{echo '<script> alert("Сообщение отправлено"); </script>';}
+else{
+echo '<script> alert("Сообщение нe отправлено"); </script>';}
+ 
 }
+ 
 ?>

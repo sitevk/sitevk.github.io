@@ -9,7 +9,6 @@
 		<link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
 		<script src="Js/jquery-3.2.1.slim.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="Js/jquery.plaxmove.js" type="text/javascript" charset="utf-8"></script>
-		<script src="Js/jquery.sendFormLP.js"></script>
 	</head>
 	<body>
 		<section class="main-left">
@@ -27,17 +26,16 @@
 					<li class="right-menu__item  item__contacts ">
 						<h2 class="right-menu__name">Контакты</h2>
 						<section class="contacts">
-							<form action="sendmail.php" data-them="Тема письма" data-show=".thank, .bg_popup" class="contacts-form">
+							<form id="form">
 								<p class="form-title">Связатся со мной</p>
 								<p><label>Имя 
-									<input type="text" name="name" data-name="Имя: " placeholder="Ваше имя" required></label></p>
+									<input type="text" name="name" placeholder="Ваше имя" required></label></p>
 								<p><label>Email 
-									<input type="email" name="email"  data-name="Емейл: "placeholder="Email" required></label></p>
+									<input type="email" name="email" placeholder="Email" required></label></p>
 								<p><label>Текст сообщения <br>
-									<textarea name="text" data-name="Текст сообщения: " placeholder="Текст сообщения" rows="5" cols="53"required></textarea></label></p>
-								<p><input class="btn btn-form" type="submit">Отправить</input></p>
+									<textarea name="text" placeholder="Текст сообщения" rows="5" cols="53"required></textarea></label></p>
+								<p><button class="btn btn-form" type="submit">Отправить</button></p>
 							</form>
-							<div class="thank" style="display:none;">Отпрвленно!</div>
 						</section>
 					</li>
 					<li class="right-menu__item  item__skills">
@@ -129,5 +127,6 @@
 					</nav>
 				</section>
 				<script src="Js/index.js"></script>
+				<script src="Js/form.js"></script>
 			</body>
 		</html>

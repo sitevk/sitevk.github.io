@@ -2,133 +2,149 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Портфолио HTML-верстальщик, Front-end sitevk.github.io</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0">
+		<title>Портфолио HTML-верстальщик, Front-end</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Philosopher:700" rel="stylesheet">
 		<link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
-		<script src="Js/jquery-3.2.1.slim.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="Js/jquery.plaxmove.js" type="text/javascript" charset="utf-8"></script>
+		<link media="screen" href="css/nav-menu.css" type="text/css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script>
+			$(function(){
+		$('.layer1').plaxmove({ratioH:0.05,ratioV:0.05})
+		$('.layer2').plaxmove({ratioH:0.1,ratioV:0.1})
+		$('.layer3').plaxmove({ratioH:0.15,ratioV:0.15})
+		});
+		</script>
+		<script src="js/jquery.plaxmove.js"></script>
 	</head>
 	<body>
+		<div class="loaderArea">
+			<div class="loader"></div>
+		</div>
 		<h1 class="visually-hidden">Портфолио HTML-верстальщик, Front-end sitevk.github.io</h1>
-		<section class="main-left">
-			<div class="layer1" style="top: -100px; left: -50px;"></div>
-			<div class="layer2" style="top: -15px; left: 0px;"></div>
-			<div class="layer3" style="top: 200px; left: 538px;"></div>
-			<div class="title">
-				<span class="title__name">Vitish Katya</span>
-				<h2 class="title__portfolio">Portfolio</h2>
+		<div class="container">
+			<div class="background">
+				<div class="layer1" style="top: -100px; left: -90px;"></div>
+				<div class="layer2" style="top: 70px; left: 20px;"></div>
+				<div class="layer3" style="top: 350px; left: 638px;"></div>
+				<div class="title">
+					<span class="title__name">Vitish Katya</span>
+					<h2 class="title__portfolio">Portfolio</h2>
+				</div>
 			</div>
-		</section>
-		<section class="main-right">
-			<nav class="main-right__menu">
-				<ul class="right-menu__list">
-					<li class="right-menu__item  item__contacts ">
-						<h2 class="right-menu__name">Контакты</h2>
-						<section class="contacts">
-							<form id="form">
-								<p class="form-title">Связатся со мной</p>
-								<p><label>Имя 
-									<input type="text" name="name" placeholder="Ваше имя" required></label></p>
-								<p><label>Email 
-									<input type="email" name="email" placeholder="Email" required></label></p>
-								<p><label>Текст сообщения <br>
-									<textarea name="text" placeholder="К сожалению, данная форма не может исполнить своего прямого назначения, так как github не поддерживает .php :(  " rows="5" cols="53"required></textarea></label></p>
-								<p><button class="btn btn-form" type="submit">Отправить</button></p>
-							</form>
-						</section>
-					</li>
-					<li class="right-menu__item  item__skills">
-						<h2 class="right-menu__name">Навыки</h2>
-						<section class="skills">
-							<h3 class="skills__SIF">Витиш Екатерина</h3>
-							<h3 class="skills__position">HTML-верстальщик</h3>
-							<p>
-								<span class="skills-text--color">Дата рождения:</span>
-							10 апреля 1986 (31 год)</p>
-							<p>
-								<span class="skills-text--color">Город:</span>
-							Киев</p>
-							<p>
-								<span class="skills-text--color">Образование:</span>
-								Высшее экономическое Итститут ФПУ,
-								<span class="skills-text--html">Курсы HTML-Acedemy</span>
+			<div class="background">
+				<section class="mywork">
+					<div class="mywork-maket">
+						<div class="mywork-maket__photo">
+							<img src="img/mishka-index-desktop.jpg" alt="Макет Мишка-главная страница" width="370" height="300">
+							<div class="overlay">
+								<a class="btn btn-left" href="https://github.com/sitevk/sitevk.github.io/tree/master/mishka" target="_blank">GitHub</a>
+								<a class="btn btn-right" href="sitevk.github.io/mishka/" target="_blank">На сайт</a>
+							</div>
+						</div>
+						<div class="mywork-maket__text">
+							<h2 class="mywork-maket__title">Адаптивный макет <br>"Мишка — магазин ручной работы"</h2>
+							<p>Трехстраничный макет, адаптивный под мобильный (320px) планшетный (768px) и десктопный (1150px) вьюпорт. Использованы адаптивные изображения под разные вьюпорты и под ретиновый экраны. Сверстан на flex.<br>
+								Меню в мобильной версии интерактивное.<br>
+								Вторая страница — пункт меню "Каталог товаров", третья страница — пункт "Вязание на заказ"
 							</p>
-							<a class="skills-link" href="https://htmlacademy.ru/intensive/htmlcss#program" target="_blank">
-							Базовый HTML и CSS <br>(Программа курса)</a>
-							<a class="skills-link" href="https://htmlacademy.ru/intensive/adaptive#program" target="_blank">Продвинутый HTML и CSS (Программа курса)</a>
-							<p class="skills-text--color">Мои навыки и умения:</p>
-							<ul class="skills-list--border">
-								<li>Знания HTML5 и CSS3</li>
-								<li>JavaScript (слайдеры, попапы,анимации, AJAX и т.д.)</li>
-								<li> Адаптивная верстка, ретинизация графики</li>
-								<li> Базовые знание LESS, JSON,AJAX </li>
-								<li>Разметка по методологии БЭМ </li>
-								<li> Базовые знание Bootstrap</li>
-								<li> Верстка новых страниц из PSD макетов</li>
-								<li>Sublime Text 3</li>
-								<li>Adobe Photoshop</li>
-								<li>Pixel Perfect</li>
-								<li> Свободное владение дебаггером</li>
-								<li> Опыт использования локального сервера (Denwer)</li>
-							</ul>
-						</section>
-					</li>
-					<li class="right-menu__item  item__myworks">
-						<h2 class="right-menu__name">Мои работы</h2>
-						<section class="mywork">
-							<div class="mywork-maket">
-								<div class="mywork-maket__photo">
-									<img src="img/mishka-index-desktop.jpg" alt="Макет Мишка-главная страница" width="370" height="300">
-									<div class="overlay">
-										<a class="btn btn-left" href="https://github.com/sitevk/sitevk.github.io/tree/master/mishka" target="_blank">GitHub</a>
-										<a class="btn btn-right" href="sitevk.github.io/mishka/" target="_blank">На сайт</a>
-									</div>
-								</div>
-								<div class="mywork-maket__text">
-									<h2 class="mywork-maket__title">Адаптивный макет <br>"Мишка — магазин ручной работы"</h2>
-									<p>Трехстраничный макет, адаптивный под мобильный (320px) планшетный (768px) и десктопный (1150px) вьюпорт. Использованы адаптивные изображения под разные вьюпорты и под ретиновый экраны. Сверстан на flex.<br>
-										Меню в мобильной версии интерактивное.<br>
-										Вторая страница — пункт меню "Каталог товаров", третья страница — пункт "Вязание на заказ"
-									</p>
-								</div>
+						</div>
+					</div>
+					<div class="mywork-maket">
+						<div class="mywork-maket__photo">
+							<img src="img/barbershop-index.jpg" alt="Макет «Barbershop Borodinski»"" width="370" height="300">
+							<div class="overlay">
+								<a class="btn btn-left" href="https://github.com/sitevk/sitevk.github.io/tree/master/barbershop" target="_blank">GitHub</a>
+								<a class="btn btn-right" href="sitevk.github.io/barbershop/" target="_blank">На сайт</a>
 							</div>
-							<div class="mywork-maket">
-								<div class="mywork-maket__photo">
-									<img src="img/barbershop-index.jpg" alt="Макет «Barbershop Borodinski»" width="370" height="300">
-									<div class="overlay">
-										<a class="btn btn-left" href="https://github.com/sitevk/sitevk.github.io/tree/master/barbershop" target="_blank" >GitHub</a>
-										<a class="btn btn-right" href="sitevk.github.io/barbershop/" target="_blank">На сайт</a>
-									</div>
-								</div>
-								<div class="mywork-maket__text">
-									<h2 class="mywork-maket__title">Фиксированный макет <br>«Barbershop Borodinski»</h2>
-									<p>Четырёхстраничный макет.
-										Фотогалерея-это слайдер, сделан на чистом JS, два модальных окна открываются при нажатии на "Вход" в навигационном меню, и кнопку "Как проехать" в блоке "Контактная информация" .
-										Вторая страница - пункт меню "Прайс-лист", третья страница - пункт "Магазин", четвертая – карточка товара Набор для путешествий «BAXTER OF CALIFORNIA»
-									</p>
-								</div>
+						</div>
+						<div class="mywork-maket__text">
+							<h2 class="mywork-maket__title">Фиксированный макет <br>«Barbershop Borodinski»</h2>
+							<p>Четырёхстраничный макет.
+								Фотогалерея-это слайдер, сделан на чистом JS, два модальных окна открываются при нажатии на "Вход" в навигационном меню, и кнопку "Как проехать" в блоке "Контактная информация" .
+								Вторая страница - пункт меню "Прайс-лист", третья страница - пункт "Магазин", четвертая – карточка товара Набор для путешествий «BAXTER OF CALIFORNIA»
+							</p>
+						</div>
+					</div>
+					<div class="mywork-maket">
+						<div class="mywork-maket__photo">
+							<img src="img/gllacy-index.jpg" alt="GllacyShop — магазин мороженого" width="370" height="300">
+							<div class="overlay">
+								<a class="btn btn-left" href="https://github.com/sitevk/sitevk.github.io/tree/master/gllacy" target="_blank">GitHub</a>
+								<a class="btn btn-right" href="sitevk.github.io/gllacy/" target="_blank">На сайт</a>
 							</div>
-							<div class="mywork-maket">
-								<div class="mywork-maket__photo">
-									<img src="img/gllacy-index.jpg" alt="Макет Gllasy Shop" width="370" height="300">
-									<div class="overlay">
-										<a class="btn btn-left" href="https://github.com/sitevk/sitevk.github.io/tree/master/gllacy" target="_blank">GitHub</a>
-										<a class="btn btn-right" href="sitevk.github.io/gllacy/" target="_blank">На сайт</a>
-									</div>
-								</div>
-								<div class="mywork-maket__text">
-									<h2 class="mywork-maket__title">Макет <br>"GllacyShop — магазин мороженого"</h2>
-									<p>Двустраничный макет фиксированной ширины 1200px. Работает слайдер, меняющий цвет страницы и вид мороженого, сверстаный только на CSS. На вторую страницу ведет подпункт "Сливочное" пункта меню "Каталог".
-									</p>
-								</div>
-							</div>
-						</section>
-					</nav>
+						</div>
+						<div class="mywork-maket__text">
+							<h2 class="mywork-maket__title">Макет <br>"GllacyShop — магазин мороженого"</h2>
+							<p>Двустраничный макет фиксированной ширины 1200px. Работает слайдер, меняющий цвет страницы и вид мороженого, сверстаный только на CSS. На вторую страницу ведет подпункт "Сливочное" пункта меню "Каталог".
+							</p>
+						</div>
+					</div>
 				</section>
-				<script src="Js/index.js"></script>
-				<script src="Js/form.js"></script>
-			</body>
-		</html>
+			</div>
+			<div class="background">
+				<section class="skills">
+					<h3 class="skills__SIF">Витиш Екатерина</h3>
+					<h3 class="skills__position">HTML-верстальщик</h3>
+					<p>
+						<span class="skills-text--color">Дата рождения:</span>
+					10 апреля 1986 (31 год)</p>
+					<p>
+						<span class="skills-text--color">Город:</span>
+					Киев</p>
+					<p>
+						<span class="skills-text--color">Образование:</span>
+						Высшее экономическое Итститут ФПУ,
+						<span class="skills-text--html">Курсы HTML-Acedemy</span>
+					</p>
+					<div class="skills-link--wrap">
+						<a class="skills-link" href="https://htmlacademy.ru/intensive/htmlcss#program" target="_blank">
+						Базовый HTML и CSS <br>(Программа курса)</a>
+						<a class="skills-link" href="https://htmlacademy.ru/intensive/adaptive#program" target="_blank">Продвинутый HTML и CSS (Программа курса)</a>
+					</div>
+					<p class="skills-text--color">Мои навыки и умения:</p>
+					<ul class="skills-list--border">
+						<li>Знания HTML5 и CSS3</li>
+						<li>JavaScript (слайдеры, попапы,анимации, AJAX и т.д.)</li>
+						<li> Адаптивная верстка, ретинизация графики</li>
+						<li> Базовые знание LESS, JSON,AJAX </li>
+						<li>Разметка по методологии БЭМ </li>
+						<li> Базовые знание Bootstrap</li>
+						<li> Верстка новых страниц из PSD макетов</li>
+						<li>Sublime Text 3</li>
+						<li>Adobe Photoshop</li>
+						<li>Pixel Perfect</li>
+						<li> Свободное владение дебаггером</li>
+						<li> Опыт использования локального сервера (Denwer)</li>
+					</ul>
+				</section>
+			</div>
+			<div class="background">
+				<section class="contacts">
+					<form id="form" class="contacts-form" action="mail.php" method="post">
+						<p class="form-title">Связатся со мной</p>
+						<p><label>Имя
+						<input type="text" name="name" placeholder="Ваше имя" required></label></p>
+						<p><label>Email
+						<input type="email" name="email" placeholder="Email" required></label></p>
+						<p><label>Текст сообщения <br>
+						<textarea name="text" placeholder="Текст сообщения"  rows="5" cols="53"required></textarea></label></p>
+						<p><button class="btn btn-form" type="submit">Отправить</button></p>
+					</form>
+					<div class="mail">ekateryna123@fex.net</div>
+				</section>
+			</div>
+		</div>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+		<script src="js/index.js"></script>
+		<script>
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+</script>
+	</body>
+</html>

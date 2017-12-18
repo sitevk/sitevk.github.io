@@ -36,7 +36,7 @@ img {
 
 .title {
   margin-left: 20px;
-  transform: translateY(50vh);
+  margin-top: 50vh;
   background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
   -webkit-background-clip: text;
   color: transparent;

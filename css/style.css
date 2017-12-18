@@ -118,7 +118,8 @@ img {
 
 .background:nth-child(2) {
   z-index: 2;
-  background-image: url("../img/gold.jpg");
+  background: url("../img/fon2-5.jpg")no-repeat; 
+  background-size: cover;
 }
 
 .background:nth-child(3) {
@@ -148,7 +149,7 @@ img {
 }
 
 .mywork {
-  background: #fffcdf;
+  background: #fffcdf85;
   box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
 
@@ -399,7 +400,7 @@ img {
 }
 
 .loaderArea {
-  background: linear-gradient(90deg, #FF4E50 10%, #F9D423 90%);
+  background: linear-gradient(90deg, #2EE59D, #225228);
   overflow: hidden;
   position: fixed;
   left: 0;
@@ -436,6 +437,37 @@ img {
  
 .loader:after {
   animation: animate2 2s infinite linear;
+}
+
+.mouse {
+    position: absolute;
+    bottom: -240%;
+    left: 50%;
+    z-index: 5;
+    height: 100px;
+    width: 50px;
+    background: url("../img/arr1.png") top center no-repeat;
+    animation-name: mouse;
+    -webkit-animation-name: mouse;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+
+@keyframes mouse {
+  0% {
+    opacity:1;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0)
+  }
+
+  100% {
+    -webkit-transform:translate3d(0, 10px, 0);
+    transform:translate3d(0, 10px, 0)
+  }
 }
 
 

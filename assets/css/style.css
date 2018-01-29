@@ -1084,6 +1084,10 @@ figure.effect-bubba:hover p {
 		margin-right: 0;
 		margin-left: 0;
 	}
+	
+	.row--margin{
+    	margin-top: 0;
+    }
 
 
 }
@@ -1112,8 +1116,13 @@ figure.effect-bubba:hover p {
     }
 
     .title__portfolio {
-    	font-size: 7em;
+    	font-size: 5em;
     }
+
+    .pfblock {
+    	padding: 40px 0;
+    }
+
 
 }
 

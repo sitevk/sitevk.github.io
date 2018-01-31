@@ -77,6 +77,7 @@ svg.intro.go .text-stroke:nth-child(6) {
   margin-top: auto; 
   transform: translate(0,0);
   opacity: 0;
+  -webkit-animation: transfer 1s ease-in-out 1s forwards;
   animation: transfer 1s ease-in-out 1s forwards;
 
 }
@@ -85,6 +86,7 @@ svg.intro.go .text-stroke:nth-child(6) {
   margin-top: auto;
   transform: translate(0,0);
   opacity: 1;
+  -webkit-animation: transfer-top 1s ease-in-out;
   animation: transfer-top 1s ease-in-out;
 }
 
@@ -120,12 +122,33 @@ svg.intro.go .text-stroke:nth-child(6) {
   margin-top: auto;
   transform: translate(0,0);
   opacity: 0;
+  -webkit-animation: transfer-right 1s ease-in-out 0.5s forwards;
   animation: transfer-right 1s ease-in-out 0.5s forwards;
 }
 
 
+ @-webkit-keyframes transfer {
+ 	0% {transform: translate(-100px, 0);
+          opacity: 0;
+ 	}
+ 	
+ 	100% {  transform: translate(0,0);
+ 		opacity:1;
+ 	}
+ }
+
  @keyframes transfer {
  	0% {transform: translate(-100px, 0);
+          opacity: 0;
+ 	}
+ 	
+ 	100% {  transform: translate(0,0);
+ 		opacity:1;
+ 	}
+ }
+
+ @-webkit-keyframes transfer-right {
+ 	0% {transform: translate(100px, 0);
           opacity: 0;
  	}
  	
@@ -144,6 +167,16 @@ svg.intro.go .text-stroke:nth-child(6) {
  	}
  }
 
+ @-webkit-keyframes transfer-top {
+ 	0% {transform: translate(0, -100px);
+          opacity: 0;
+ 	}
+ 	
+ 	100% {  transform: translate(0,0);
+ 		opacity:1;
+ 	}
+ }
+
  @keyframes transfer-top {
  	0% {transform: translate(0, -100px);
           opacity: 0;
@@ -153,6 +186,7 @@ svg.intro.go .text-stroke:nth-child(6) {
  		opacity:1;
  	}
  }
+
 
 @media (max-width: 769px) {
 	.title {
@@ -171,12 +205,14 @@ svg.intro.go .text-stroke:nth-child(6) {
 
    .page-main__left {
    	width: 100%;
+   	opacity: 1;
    	order:2;
    }
 
    .page-main__right {
    	width: 100%;
    	order: 3;
+   	opacity: 1;
    	padding-left: 3%;
    }
 

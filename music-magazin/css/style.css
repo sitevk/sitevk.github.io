@@ -176,7 +176,7 @@ svg.intro.go .text-stroke:nth-child(6) {
  		opacity:1;
  	}
  }
-
+ 
  @keyframes transfer-top {
  	0% {transform: translate(0, -100px);
           opacity: 0;
@@ -186,7 +186,7 @@ svg.intro.go .text-stroke:nth-child(6) {
  		opacity:1;
  	}
  }
-
+ 
 
 @media (max-width: 769px) {
 	.title {
@@ -205,14 +205,12 @@ svg.intro.go .text-stroke:nth-child(6) {
 
    .page-main__left {
    	width: 100%;
-   	opacity: 1;
    	order:2;
    }
 
    .page-main__right {
    	width: 100%;
    	order: 3;
-   	opacity: 1;
    	padding-left: 3%;
    }
 

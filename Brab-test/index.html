@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brab-test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/fregat/fregat.css">
+</head>
+<body>
+	<header class="main-header">
+		<nav class="nav container">
+			<h1 class="logo">DAVID</h1>
+			<input class="nav-menu__checkbox" type="checkbox" id="burger">
+		 	<label class="nav-menu__burger" for="burger"></label>
+		 <ul class="nav-menu">
+		 	<li><a href="#" class="nav-menu__item"> ЧТО ВХОДИТ В ПРОГРАММУ</a></li>
+		 	<li><a href="#" class="nav-menu__item"><span>&bull;</span> ПОЧЕМУ СИДЕТЬ ВРЕДНО</a></li>
+		 	<li><a href="#" class="nav-menu__item"><span>&bull;</span> В каких случаях программа будет полезной</a></li>
+		 	<li><a href="#" class="nav-menu__item"><span>&bull;</span> КАК ВСЕ ПРОИСХОДИТ </a></li>
+		 	<li><a href="#" class="nav-menu__item"><span>&bull;</span> КАК работает методика DaVID</a></li>
+		 </ul>	
+		</nav>
+	</header>
+	<main class="container">
+		<div class="slider">
+              <ul class="slider__container">
+                <li class="slider-list slider-list--fade">
+                <img src="img/slider-1.jpg" style="width:100%" alt="photo"></li>
+                <li class="slider-list slider-list--fade">
+                  <img src="img/slider-2.jpg" style="width:100%" alt="photo2">
+                </li>
+                <li class="slider-list slider-list--fade">
+                  <img src="img/slider-3.jpg" style="width:100%" alt="photo3">
+                </li>
+              </ul>
+                <button class="btn btn-prev" onclick="plusSlides(-1)">Назад</button>
+                <button class="btn btn-next" onclick="plusSlides(1)">Вперед</button>
+            </div>
+	</main>
+	<script src="JS/slider.js"></script>
+</body>
+</html>
